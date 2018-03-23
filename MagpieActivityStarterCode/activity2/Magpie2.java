@@ -83,7 +83,7 @@ public class Magpie2
   */
  private String getRandomResponse()
  {
-  final int NUMBER_OF_RESPONSES = 4;
+  final int NUMBER_OF_RESPONSES = 9;
   double r = Math.random();
   int whichResponse = (int)(r * NUMBER_OF_RESPONSES);
   String response = "";
@@ -103,6 +103,26 @@ public class Magpie2
   else if (whichResponse == 3)
   {
    response = "You don't say.";
+  }
+  else if (whichResponse == 4)
+  {
+    response = "Why do you think this way?";
+  }
+  else if (whichResponse == 5)
+  {
+    response = "I agree with you";
+  }
+  else if (whichResponse == 6)
+  {
+    response = "Is that so?";
+  }
+  else if (whichResponse == 7)
+  {
+    response = "This is a very interesting topic";
+  }
+  else if (whichResponse == 8)
+  {
+    response = "I understand what you mean. Are you feeling well today?";
   }
 
   return response;
